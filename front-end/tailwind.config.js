@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'clouds': "url('../assets/clouds.png')",
-      },
     },
   },
   plugins: [],

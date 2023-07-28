@@ -3,3 +3,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.bg-house {
+  background-image: url('../assets/modern-house.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
