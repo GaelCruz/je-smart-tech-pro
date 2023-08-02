@@ -9,3 +9,23 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+  /* styles.css */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateX(50%);
+    font-size: 50px;
+    color: black;
+    border-radius: 50rem;
+  }
+
+  .right-prev {
+    left: 0;
+    transform: translateX(-50%, -50%);
+  }
+
+  .left-next {
+    right: 0;
+    transform: translateX(50%, 50%);
+  }

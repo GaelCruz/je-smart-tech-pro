@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../assets/jes-vid.mp4';
+import video from '../assets/jes-vid.mp4'
 import { Link } from 'react-router-dom';
 import highCeiling from '../assets/high-ceiling.png'
 import clouds from '../assets/clouds.png';
@@ -7,9 +7,16 @@ import modernKitchen from '../assets/modern-kitchen.png'
 import fleet from '../assets/fleet.png'
 import gps from '../assets/gps.png'
 import dashcam from '../assets/dashcam.png'
+import Carousel from '../Components/Carousel';
 import '../css-files/Homepage.css'
 
 export default function Home() {
+  const slides = [
+    {image: fleet},
+    {image: clouds},
+    {image: gps},
+  ]
+
   return (
     <div>
       <div className="relative">
@@ -175,179 +182,9 @@ export default function Home() {
         <h1 className='lg:text-5xl sm:text-3xl text-xl'>See Our Work</h1>
       </div>
 
-      <div className="sm:py-20 bg-clouds max-w-full sm:h-full h-96 overflow-x-auto">
-        <div className="
-          space-y-3
-          sm:space-y-0
-          sm:space-x-3
-          xl:space-y-0
-          p-5
-          
-          bg-sky-300/50 
-          sm:flex">
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            h-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full 
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-
-          <div className="
-            relative
-            drop-shadow-lg 
-            w-full
-            sm:w-1/2 
-            md:w-1/3 
-            lg:w-1/4">
-              <img
-                src={clouds}
-                alt="Your Image"
-                className=""
-              />
-              <div className="absolute top-0 left-0 p-4">
-                
-              </div>
-          </div>
-        </div>
+      <div className="container mx-auto p-4 relative">
+        <Carousel slides={slides} />
       </div>
-
     </div>
   );
 }
