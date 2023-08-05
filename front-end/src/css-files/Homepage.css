@@ -10,22 +10,27 @@
   background-repeat: no-repeat;
 }
 
-  /* styles.css */
+  /* carousel */
+
+  .carousel-wrapper{
+    position: relative;
+  }
+
   .arrow {
     position: absolute;
     top: 50%;
-    transform: translateX(50%);
     font-size: 50px;
     color: black;
-    border-radius: 50rem;
   }
 
   .right-prev {
     left: 0;
-    transform: translateX(-50%, -50%);
+    transform: translateX(50%, -50%);
+    z-index: 1;
   }
 
   .left-next {
     right: 0;
-    transform: translateX(50%, 50%);
+    transform: translateX(-50%, 50%);
+    z-index: 2;
   }
