@@ -13,6 +13,8 @@ export const ContactForm = () => {
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset()
+      alert("we got your email")
   };
 
   return (
@@ -30,7 +32,7 @@ export const ContactForm = () => {
           type="text"
           name="message"
           placeholder="What can we do for you?"
-          required
+          requ
         />
 
         <div className='w-full mx-auto'>
