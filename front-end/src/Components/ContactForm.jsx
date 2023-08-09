@@ -14,7 +14,10 @@ export const ContactForm = () => {
           console.log(error.text);
       });
       e.target.reset()
-      alert("we got your email")
+      const successMessageDiv = document.getElementById('successMessage');
+      if (successMessageDiv) {
+        successMessageDiv.classList.remove('hidden');
+      }
   };
 
   return (
@@ -38,8 +41,11 @@ export const ContactForm = () => {
         <div className='w-full mx-auto'>
           <button className='bg-gray-200 hover:bg-sky-300 rounded bg-sky-300/50 shadow-md ring-none focus:outline-none p-2 w-full'>Submit</button>
         </div>
-
       </form>
+      
+        <div id="successMessage" class="hidden text-center max-w-lg mx-auto p-4 mb-4 mt-4 bg-green-200 text-green-800 rounded shadow-lg shadow-green-600/50">
+          <p>Thank you! Your form has been submitted successfully.</p>
+        </div>
     </div>
   );
 };
