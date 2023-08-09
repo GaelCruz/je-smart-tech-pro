@@ -16,6 +16,7 @@ import kwikset from '../assets/logos/Kwikset.png'
 import '../css-files/Homepage.css'
 import LogoCarousel from '../Components/LogoCarousel';
 import QuoteCarousel from '../Components/QuoteCarousel';
+import ContactForm from '../Components/ContactForm';
 
 export default function Home() {
   const slides = [
@@ -293,24 +294,8 @@ export default function Home() {
       <div className='bg-stone-300 px-9 py-5 sm:py-20 sm:px-20 my-3'>
         <h1 className='lg:text-5xl sm:text-3xl text-xl'>Contact Us</h1>
       </div>
-      <form action="submit" className='space-y-4 p-5 my-5 rounded max-w-2xl mx-auto bg-red-300'>
-        <div className='flex justify-between space-x-3'>
-          <input type="text" placeholder='First Name' className='p-2 w-full' />
-          <input type="text" placeholder='Last Name' className='p-2 w-full' />
-        </div>
-        <input type="text" className='p-2 w-full' placeholder='Email' />
-        <input type="text" className='p-2 w-full' placeholder='Phone Number' />
-        <input
-          className="fload-left w-full p-3 leading-tight"
-          type="text"
-          placeholder="What can we do for you? "
-          aria-label="Text Input"
-        />
-        <div className='w-full mx-auto'>
-          <button className='bg-sky-200 rounded ring p-2 w-full'>Submit</button>
-        </div>
-        
-      </form>
+      
+      <ContactForm />
     </div>
     
   );
