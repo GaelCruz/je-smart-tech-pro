@@ -7,14 +7,15 @@ export default function Navbar() {
 
   const checkScreenWidth = () => {
     if(windowWitdth >= 640){
-      document.getElementById("nav-items");
+
+      return true
     } else {
       return false;
     }
   }
 
   const handleResize = () => {
-    checkScreenWidth();
+   checkScreenWidth();
   }
 
   const toggleNav = () => {
@@ -40,7 +41,7 @@ export default function Navbar() {
       </div>
       <div
         id='nav-items'
-        className={`md:hidden sm:flex flex-col ${isNavOpen ? 'flex' : 'hidden'} ${handleResize ? 'hidden': 'block'}`}
+        className={`md:hidden sm:flex flex-col ${isNavOpen ? 'flex' : 'hidden'} ${handleResize ? '': 'block'}`}
       >
         <Link className="hover:text-teal-950" to="/">Home</Link>
         <Link className="hover:text-teal-950" to="/about">About</Link>
