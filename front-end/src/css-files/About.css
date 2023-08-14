@@ -1,0 +1,59 @@
+.about-padding {
+    padding-top: 100px;
+}
+
+.title {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(165, 165, 165);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.first-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 610px;
+    background-color: gray;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.para-box {
+    display: flex;
+    height: 350px;
+    width: 750px;
+    background-color: white;
+}
+
+.para-box p {
+    padding: 15px;
+}
+
+.person-img-box {
+    height: 500px;
+    width: 350px;
+    background-color: white;
+}
+
+.second-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 610px;
+    background-color: rgb(163, 163, 163);
+    margin: 10px;
+}
+
+.para-box-2 {
+    height: 400px;
+    width: 700px;
+    background-color: white;
+    margin-right: 50px;
+}
+
