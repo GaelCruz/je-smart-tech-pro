@@ -9,6 +9,7 @@ import CamAndSec from './views/CamAndSec'
 import AutomotiveServices from './views/AutomotiveServices'
 import ComfAndControl from './views/ComfAndControl'
 import Contact from './views/Contact'
+import Service from './views/Service'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path='/cameras-and-security' element={<CamAndSec />} />
         <Route path='/automotive-services' element={<AutomotiveServices />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/service/item/:id' element={<Service />} />
       </Routes>
       <Footer />
     </div>
