@@ -21,7 +21,7 @@ export default function CamAndSec() {
   return (
     <div>
       <div className="cam-sec-banner">
-        <h1 className='pt-44 font-bold text-white text-center p-20 text-4xl'>Cameras and Security</h1>
+        <h1 className='pt-80 pb-60 font-bold text-white text-center p-20 text-4xl'>Cameras and Security</h1>
       </div>
       <div className='p-3 bg-gray-100'>
         {items.map((item, index) => (

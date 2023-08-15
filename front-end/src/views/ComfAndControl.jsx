@@ -39,7 +39,7 @@ export default function ComfAndControl() {
   return (
     <div>
       <div className="comf-and-cont-banner">
-        <h1 className='pt-52 pb-32 font-bold text-white text-center p-20 text-4xl'>Comfort and Control</h1>
+        <h1 className='pt-80 pb-60 font-bold text-white text-center p-20 text-4xl'>Comfort and Control</h1>
       </div>
       <div className='p-3 bg-gray-100'>
         {items.map((item, index) => (

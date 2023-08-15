@@ -1,0 +1,40 @@
+.automotive-services-banner {
+  background-image: url('../assets/automotive-services/autoMotiveServicesBanner.png'); 
+  background-size: cover;
+}
+
+.bg-12 {
+  background-image: url('../assets/automotive-services/vehicle-backup-system.png'); 
+  background-size: cover;
+}
+
+.bg-13 {
+  background-image: url('../assets/automotive-services/live-dash-36-view-aux-cams.png'); 
+  background-size: cover;
+}
+
+.bg-14 {
+  background-image: url('../assets/automotive-services/cloud-based-video-stroage.png'); 
+  background-size: cover;
+}
+
+.bg-15 {
+  background-image: url('../assets/automotive-services/live-gps-tracking.png'); 
+  background-size: cover;
+}
+
+.bg-16 {
+  background-image: url('../assets/automotive-services/ELD.png'); 
+  background-size: cover;
+}
+
+.bg-17 {
+  background-image: url('../assets/automotive-services/ELD-instalation.png'); 
+  background-size: cover;
+}
+
+.bg-18 {
+  background-image: url('../assets/automotive-services/Fleet-managment.png'); 
+  background-size: cover;
+}
+

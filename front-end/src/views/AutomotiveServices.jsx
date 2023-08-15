@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import ContactForm from '../Components/ContactForm';
+import '../css-files/AutomotiveServices.css'
 
 export default function AutomotiveServices() {
 
@@ -29,16 +30,13 @@ export default function AutomotiveServices() {
       { "id": 18, 
       "title": "Title 1", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
-      { "id": 19, 
-      "title": "Title 1", 
-      "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
       
   ]);
 
   return (
     <div>
-      <div className="cam-sec-banner">
-        <h1 className='pt-52 font-bold text-white text-center p-20 text-4xl'>Automotive Services</h1>
+      <div className="automotive-services-banner">
+        <h1 className='pt-80 pb-60 font-bold text-white text-center p-20 text-4xl'>Automotive Services</h1>
       </div>
       <div className='p-3 bg-gray-100'>
         {items.map((item, index) => (

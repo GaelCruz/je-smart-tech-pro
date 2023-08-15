@@ -27,6 +27,7 @@ export default function Service() {
           <h3 className='border-2 p-10 max-w-lg border-black text-3xl font-bold text-center bg-gray-500/50 shadow-xl'>{item.title}</h3>
         </div>
         <div className='p-10'>
+          <h1 className='text-3xl mb-10'>{item.title}</h1>
           <p>{item.desc}</p>
         </div>
       </div>
@@ -37,77 +38,74 @@ export default function Service() {
 
 const items = [
   { "id": 1,
-      "title": "Smart Home System", 
+      "title": "Surveillance Systems & Cameras", 
       "desc": 'Lörem ipsum sov intrassade jag dityrade viv megalig. Polygisk nyheten utom treskade krot. Nyspevis prera, dös trens. Kaplangar presamma trak homorevis kromon fabelt. Gigans stenobel till rerade utom krofar korade fera. Ons nilig parasm. Gypp amor bufedat kontrak atura. Trism janing pode far pseudoling, och spesm. Vivigisk faning bemäsat. Din telelingar. Far fis gumode i beng. Sosade pas än teviktig. Krock eurojande, id tyn.' },
 
       { "id": 2, 
-      "title": "Title 1", 
+      "title": "Backup Camera Systems", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 3, 
-      "title": "Title 1", 
+      "title": "Monitored Alarm System", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 4, 
-      "title": "Title 1", 
+      "title": "Smart Home System", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 5, 
-      "title": "Title 1", 
+      "title": "Whole Home Audio/Video System", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 6, 
-      "title": "Title 1", 
+      "title": "Smart Shades and Drapes", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 7, 
-      "title": "Title 1", 
+      "title": "Smart Thermostats", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
+
       { "id": 8, 
-      "title": "Title 1", 
+      "title": "Access Control", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 9, 
-      "title": "Title 1", 
+      "title": "Pool Control", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 10, 
-      "title": "Title 1", 
+      "title": "Smart Lighting", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 11, 
-      "title": "Title 1", 
+      "title": "Networking and Wifi", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 12,
-      "title": "Title 1", 
+      "title": "Vehicle Backup Camera Systems", 
       "desc": "Lörem ipsum sov intrassade jag dityrade viv megalig. Polygisk nyheten utom treskade krot. Nyspevis prera, dös trens. Kaplangar presamma trak homorevis kromon fabelt. Gigans stenobel till rerade utom krofar korade fera. Ons nilig parasm. Gypp amor bufedat kontrak atura. Trism janing pode far pseudoling, och spesm. Vivigisk faning bemäsat. Din telelingar. Far fis gumode i beng. Sosade pas än teviktig. Krock eurojande, id tyn. " },
 
       { "id": 13, 
-      "title": "Title 1", 
+      "title": "Live Dash Cam & 360 View Aux Cams", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 14, 
-      "title": "Title 1", 
+      "title": "Cloud-Based Video Storage", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 15, 
-      "title": "Title 1", 
+      "title": "Live GPS Tracking", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 16, 
-      "title": "Title 1", 
+      "title": "ELD", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 17, 
-      "title": "Title 1", 
+      "title": "Installation For All ELD Systems", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 
       { "id": 18, 
-      "title": "Title 1", 
-      "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
-      
-      { "id": 19, 
-      "title": "Title 1", 
+      "title": "Fleet Management Software System", 
       "desc": "Lörem ipsum befur nott mingar nysal. Homoten tira pas om senat, geore nen. Sulagen vanuda kvasinde." },
 ]
