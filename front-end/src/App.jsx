@@ -10,6 +10,7 @@ import AutomotiveServices from './views/AutomotiveServices'
 import ComfAndControl from './views/ComfAndControl'
 import Contact from './views/Contact'
 import Service from './views/Service'
+import '../src/css-files/main.css'
 
 export default function App() {
   return (
