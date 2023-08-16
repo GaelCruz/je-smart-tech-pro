@@ -1,6 +1,9 @@
 import React from 'react'
 import ContactForm from '../Components/ContactForm'
 import '../css-files/Contact.css'
+import {BsFillTelephoneFill} from 'react-icons/bs'
+import {MdEmail} from 'react-icons/md'
+import background from '../assets/contact-page/background-house.png'
 
 export default function Contact() {
   return (
@@ -11,21 +14,21 @@ export default function Contact() {
           <p>Contact Us</p>
         </div>
 
-        <div className="contact-box-and-form">
+        <div className="p-3 contact-box-and-form sm:flex">
 
           <div className="container">
-            <div className="contact">
+            <div className=" bg-zinc-400/80 shadow-2xl rounded contact">
               <h1>CONTACT</h1>
 
-              <div className="contact-info">
-                <div className="email">
-                  <div className="email-icon">{/* img goes here */}</div>
-                  <p>javier@jesmart-tech.com</p>
+              <div className="contact-info space-y-2">
+                <div className="email flex items-center">
+                  <div><MdEmail /></div>
+                  <p><a href="mailto:javier@jesmart-tech.com">javier@jesmart-tech.com</a></p>
                 </div>
 
-                <div className="phone">
-                  <div className="phone-icon">{/* img goes here */}</div>
-                  <p>832.845.9176</p>
+                <div className="phone flex items-center">
+                  <div className=""><BsFillTelephoneFill /></div>
+                  <p><a href="tel:8328459176">832.845.9176</a></p>
                 </div>
 
                 <div className="bg-contact-form"></div>

@@ -3,12 +3,14 @@
 }
 
 .contact-box-and-form {
-    display: flex;
+    background-image: url(../assets/contact-page/background-house.png);
+    background-size: cover;
 }
 
 .container {
     display: flex;
     width: 100%;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     margin: 0;
@@ -20,10 +22,9 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 1000px;
+    height: 80vh;
     width: 100%;
-    background-color: rgb(209, 209, 209);
-    margin: 20px;
+    margin: 10px;
 }
 
 .contact h1 {
@@ -32,7 +33,6 @@
 }
 
 .contact-info {
-    margin-top: 20px;
     font-size: 20px;
 }
 
@@ -53,7 +53,6 @@
 
 .phone {
     display: flex;
-    margin-top: 50px;
     gap: 1rem;
 }
 
@@ -78,4 +77,18 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 639px) {
+    .contact {
+        height: 30vh;
+    }
+    .contact h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .contact-info {
+        font-size: 20px;
+    }
 }
