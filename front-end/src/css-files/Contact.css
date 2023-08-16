@@ -1,9 +1,17 @@
-.container {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+.contact-us-page {
+    padding-top: 100px;
+}
 
+.contact-box-and-form {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
 
 .contact {
@@ -11,11 +19,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 80vh;
     justify-content: center;
+    height: 1000px;
     width: 100%;
     background-color: rgb(209, 209, 209);
-    
+    margin: 20px;
 }
 
 .contact h1 {
@@ -63,4 +71,11 @@
 /* gael css */
 .contact-box {
     height: 100vh;
+}
+
+.bg-contact-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
