@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="relative pt-16 sm:pt-24">
+      <div className="relative pt-16 sm:pt-20">
         <video className="w-full" src={video} autoPlay loop />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
         <div className="absolute pt-10 w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">

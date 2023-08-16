@@ -22,7 +22,7 @@ export default function Service() {
 
   return (
     <div className=''>
-      <div className='pt-24'>
+      <div className='pt-20'>
         <div className='flex justify-center py-20 bg-teal-200'> 
           <h3 className='border-2 p-10 max-w-lg border-black text-3xl font-bold text-center bg-gray-500/50 shadow-xl'>{item.title}</h3>
         </div>
