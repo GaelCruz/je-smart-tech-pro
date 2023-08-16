@@ -7,7 +7,7 @@ import {MdEmail} from 'react-icons/md'
 export default function Contact() {
   return (
     <div className=''>
-      <div className='contact-us-page'>
+      <div className='contact-us-page pt-20'>
         <div className="title">
           <div className="title-box"></div>
           <p>Contact Us</p>
