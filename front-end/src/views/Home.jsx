@@ -276,7 +276,7 @@ export default function Home() {
         <h1 className='lg:text-5xl sm:text-3xl text-xl'>See Our Work</h1>
       </div>
 
-      <div className="container mx-auto p-4 relative">
+      <div className="p-10">
         <Carousel slides={slides} />
       </div>
 
