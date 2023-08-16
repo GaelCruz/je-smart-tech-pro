@@ -22,7 +22,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
        <form ref={form} onSubmit={sendEmail} action="submit" className='space-y-4 p-5 my-10 rounded max-w-2xl mx-auto bg-sky-300/50 shadow-xl shadow-sky-400/50' required>
 
         <input type="text" name='from_name' placeholder='First and Last Name' className='p-2 w-full bg-sky-300/50 shadow-md ring-none focus:outline-none' required/>

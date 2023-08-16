@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import jestLogo from '../assets/logo.png';
+import '../css-files/navbar.css'
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -52,8 +53,8 @@ export default function Navbar() {
           <button ref={dropDownRef} onClick={handleClick} className='relative hover:text-red-500'>Our Services <button className='animate-bounce'>▼</button></button>
           <Link className="hover:text-teal-950" to="/contact">Contact</Link>
 
-          <div className='relative'>
-            <div  className={`right-1 p-5 absolute mt-2 bg-gray-200 rounded-lg ${ourServicesButtonClick ? '' : 'hidden'}`}>
+          <div className=' relative'>
+            <div  className={`services-container right-1 p-5 absolute mt-2 bg-gray-200 rounded-lg ${ourServicesButtonClick ? 'fade-in' : ''}`}>
               <ul>  
 
                 <li className='py-2 p-1 border-b-2 border-sky-300/50 hover:bg-sky-300/50 hover:rounded-lg hover:shadow-xl'><Link className="hover:text-teal-950" to="/comfort-and-control">Comfort & Control</Link></li>
