@@ -3,7 +3,6 @@ import ContactForm from '../Components/ContactForm'
 import '../css-files/Contact.css'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
-import background from '../assets/contact-page/background-house.png'
 
 export default function Contact() {
   return (

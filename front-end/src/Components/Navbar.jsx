@@ -10,15 +10,11 @@ export default function Navbar() {
   const windowWitdth = window.innerWidth
 
   const checkScreenWidth = () => {
-    if(windowWitdth >= 640){
+    if(windowWitdth > 640){
       return true
     } else {
       return false;
     }
-  }
-
-  const handleResize = () => {
-   checkScreenWidth();
   }
 
   const toggleNav = () => {
@@ -53,7 +49,7 @@ export default function Navbar() {
           <button ref={dropDownRef} onClick={handleClick} className='relative hover:text-red-500'>Our Services <button className='animate-bounce'>▼</button></button>
           <Link className="hover:text-teal-950" to="/contact">Contact</Link>
 
-          <div className=' relative'>
+          <div className='relative'>
             <div  className={`services-container right-1 p-5 absolute mt-2 bg-gray-200 rounded-lg ${ourServicesButtonClick ? 'fade-in' : ''}`}>
               <ul>  
 
@@ -77,7 +73,7 @@ export default function Navbar() {
       </div>
       <div
         id='nav-items'
-        className={`mt-5 md:hidden sm:flex flex-col ${isNavOpen ? 'flex' : 'hidden'} ${handleResize ? '': 'block'}`}
+        className={`mt-5 md:hidden flex flex-col ${isNavOpen ? 'fade-in' : 'hidden'}`}
       >
         <Link className="hover:text-teal-950" to="/">Home</Link>
         <Link className="hover:text-teal-950" to="/about">About</Link>
