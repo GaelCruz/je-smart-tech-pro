@@ -294,8 +294,9 @@ export default function Home() {
       <div className='bg-stone-300 px-9 py-5 sm:py-20 sm:px-20 my-3'>
         <h1 className='lg:text-5xl sm:text-3xl text-xl'>Contact Us</h1>
       </div>
-      
-      <ContactForm />
+      <div className='px-3'>
+        <ContactForm />
+      </div>
     </div>
     
   );

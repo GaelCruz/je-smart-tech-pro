@@ -9,8 +9,8 @@ import {BsFacebook} from 'react-icons/bs'
 
 export default function Footer() {
   return (
-    <div className=' bg-stone-200 '>
-      <div className='flex justify-evenly p-8'>
+    <div className='hidden sm:block bg-stone-200 p-8 '>
+      <div className='flex justify-evenly'>
         <div>
           <Link to={"/"}>
             <img src={logo} alt="Logo"/>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
       </div>  
-      <div className='text-center py-2'>
+      <div className='text-sm text-center py-2'>
         <p>All Rights Reserved || JE Smart Tech &copy;2023</p>
       </div>
     </div>

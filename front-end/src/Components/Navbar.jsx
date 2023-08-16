@@ -39,7 +39,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="z-40 fixed bg-sky-300/90 p-5 sm:p-5 shadow-xl w-full">
+    <nav className="z-40 fixed bg-sky-300/90 p-2 px-3 sm:p-5 shadow-xl w-full">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* <h1 className="text-xl sm:text-2xl">JE Smart Tech</h1> */}
         <Link to={"/"}><img className='h-10' src={jestLogo} alt="" /></Link>
