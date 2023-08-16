@@ -1,7 +1,13 @@
+.contact-box-and-form {
+    display: flex;
+}
+
 .container {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 .contact {
@@ -55,4 +61,11 @@
 
 .phone p {
     font-weight: bold;
+}
+
+.bg-contact-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
