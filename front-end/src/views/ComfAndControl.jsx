@@ -48,7 +48,7 @@ export default function ComfAndControl() {
       <div className='p-3 bg-gray-100'>
         {items.map((item, index) => (
           <div key={index} className={`bg-${item.id} mb-3 p-10 xl:py-80 py-40 flex ${item.id % 2 === 0 ? 'flex-row-reverse': ''}`}>
-            <div className='bg-sky-300/50 max-w-lg p-3 shadow-2xl'>
+            <div className='bg-sky-300/50 max-w-lg p-3 shadow-2xl fade-in-element'>
               <h2 className='text-lg font-bold mb-2'>{item.title}</h2>
               <p className='mb-3'>{item.desc.slice(0,300)}...</p>
               <Link className='text-teal-300' to={`/service/item/${item.id}`}>Read More...</Link>
