@@ -6,11 +6,10 @@ import {MdEmail} from 'react-icons/md'
 
 export default function Contact() {
   return (
-    <div className=''>
-      <div className='contact-us-page pt-20'>
-        <div className="title">
-          <div className="title-box"></div>
-          <p>Contact Us</p>
+    <div className='bg-sky-300'>
+      <div className='contact-us-page pt-14 sm:pt-20'>
+        <div className="banner-bg border-red-300 p-10 sm:py-40 mb-2">
+          <p className='text-center text-white bg-gray-950/70 p-6 rounded shadow-xl font-bold text-3xl sm:text-5xl'>Contact Us</p>
         </div>
 
         <div className="p-3 contact-box-and-form sm:flex">
