@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <div className='bg-sky-300'>
       <div className='contact-us-page pt-14 sm:pt-20'>
-        <div className="banner-bg border-red-300 p-10 sm:py-40 mb-2">
-          <p className='text-center text-white bg-gray-950/70 p-6 rounded shadow-xl font-bold text-3xl sm:text-5xl'>Contact Us</p>
+        <div className="banner-bg flex justify-center p-10 sm:py-40 mb-2">
+          <p className='max-w-lg text-center text-white bg-gray-950/70 p-10 rounded shadow-xl font-bold text-3xl sm:text-5xl'>Contact Us</p>
         </div>
 
         <div className="p-3 contact-box-and-form sm:flex">

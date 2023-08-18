@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import ContactForm from '../Components/ContactForm';
+import '../css-files/Cam&Sec.css';
 
 export default function CamAndSec() {
 

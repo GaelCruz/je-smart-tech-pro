@@ -4,12 +4,13 @@
 
 .title {
     display: flex;
+    padding: 20px;
     height: 400px;
     width: 100%;
-    background-color: rgb(165, 165, 165);
+    background-image: url('../assets/aboutpage/about-banner.jpg');
+    background-size: cover;
     justify-content: center;
     align-items: center;
-    color: white;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -19,16 +20,16 @@
     align-items: center;
     justify-content: space-evenly;
     height: 610px;
-    background-color: gray;
+    background: url('../assets/aboutpage/bg-about-2.png');
+    background-size: cover;
     padding-left: 10px;
     margin: 10px;
 }
 
 .para-box {
     overflow: scroll;
-    height: 75%;
-    width: 70%;
-    background-color: white;
+    height: 20vh;
+    width: 50vh;
     padding: 30px;
 }
 
@@ -39,7 +40,6 @@
 .person-img-box {
     height: 500px;
     width: 350px;
-    background-color: white;
 }
 
 .second-box {
@@ -47,17 +47,17 @@
     justify-content: end;
     align-items: center;
     height: 610px;
-    background-color: rgb(163, 163, 163);
+    background-image: url('../assets/aboutpage/bg-about-1.png');
+    background-size: cover;
+    padding: 10%;
     margin: 10px;
 }
 
 .para-box-2 {
     overflow: scroll;
-    height: 55%;
-    width: 45%;
-    background-color: white;
+    height: 400px;
+    width: 750px;
     padding: 20px;
-    margin-right: 50px;
 }
 
 .para-box-2 .our-goals {
@@ -69,44 +69,39 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 1500px) {
-    .para-box {
-        overflow: scroll;
-        height: 75%;
-        width: 65%;
-        background-color: white;
-        padding: 30px;
-    }
-}
 
-@media screen and (max-width: 1320px) {
-    .para-box {
-        overflow: scroll;
-        height: 75%;
-        width: 50%;
-        background-color: white;
-        padding: 30px;
-    }
-}
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 650px) {
+
+    .title {
+        display: flex;
+        padding: 20px;
+        height: 400px;
+        width: 100%;
+        background-image: url('../assets/aboutpage/about-banner.jpg');
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 25px;
+        text-align: center;
+    }
+    
     .first-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-
-        background-color: gray;
-
-        margin: 10px;
+        height: 100%;
+        padding: 1.2rem;
     }
 
     .para-box {
         display: flex;
         flex-direction: column;
         overflow: scroll;
-        height: 75%;
-        width: 90%;
+        height: 40vh;
+        width: 100%;
         background-color: white;
         margin: 10px;
         padding: 30px;
@@ -114,32 +109,10 @@
 
     .person-img-box {
         height: 25%;
-        width: 90%;
+        width: 100%;
     }
-}
 
-@media screen and (max-width: 700px) {
-    .title h1 {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 670px) {
     .about-padding {
         padding-top: 55px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .title {
-        padding: 10px;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 377px) {
-    .title {
-        padding: 10px;
-        text-align: center;
     }
 }
