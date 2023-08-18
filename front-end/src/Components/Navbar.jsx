@@ -9,14 +9,6 @@ export default function Navbar() {
   const [ourServicesButtonClick, setOurServicesButtonClick] = useState(false)
   const windowWitdth = window.innerWidth
 
-  const checkScreenWidth = () => {
-    if(windowWitdth > 640){
-      return true
-    } else {
-      return false;
-    }
-  }
-
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -30,6 +22,7 @@ export default function Navbar() {
       setOurServicesButtonClick(false)
     }
   }
+  
 
   useEffect(() => {
     window.addEventListener('click', closeMenu);
@@ -39,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="z-40 fixed bg-sky-300/90 p-2 px-3 sm:p-5 shadow-xl w-full">
+    <nav className="z-40 fixed bg-sky-300/90 p-2 px-3 relative sm:p-5 shadow-xl w-full">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* <h1 className="text-xl sm:text-2xl">JE Smart Tech</h1> */}
         <Link to={"/"}><img className='h-10' src={jestLogo} alt="" /></Link>
@@ -73,7 +66,7 @@ export default function Navbar() {
       </div>
       <div
         id='nav-items'
-        className={`mt-5 md:hidden flex flex-col ${isNavOpen ? 'fade-in' : 'hidden'}`}
+        className={`absolute right-3 bg-sky-300/90 mt-5 flex flex-col ${isNavOpen ? 'fade-in' : 'fade-out'}`}
       >
         <Link className="hover:text-teal-950" to="/">Home</Link>
         <Link className="hover:text-teal-950" to="/about">About</Link>
