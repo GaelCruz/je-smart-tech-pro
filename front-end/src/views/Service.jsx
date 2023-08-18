@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ContactForm from '../Components/ContactForm'
 import '../css-files/service.css'
-import clouds from '../assets/clouds.png'
+// import clouds from '../assets/clouds.png'
 
 export default function Service() {
   const { id } = useParams();
@@ -33,7 +33,7 @@ export default function Service() {
           <p>{item.desc}</p>
         </div>
       </div>
-      <div className={`bg-[url(${clouds})]`}>
+      <div className={``}>
         <ContactForm />
       </div>
     </div>

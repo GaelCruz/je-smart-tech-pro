@@ -12,6 +12,11 @@
     margin: 0;
 }
 
+.banner-bg{
+    background-image: url(../assets/contact-page/contact-banner.png);
+    background-size: cover;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
