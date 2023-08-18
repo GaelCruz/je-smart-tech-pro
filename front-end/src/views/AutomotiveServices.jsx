@@ -5,27 +5,6 @@ import '../css-files/AutomotiveServices.css'
 
 export default function AutomotiveServices() {
 
-  const elementRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (elementRef.current) {
-        const elementTop = elementRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (elementTop > windowHeight) {
-          setIsVisible(true)
-        }
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
   const [items, setItems] = useState([
     { "id": 12,
     "title": "Vehicle Backup Camera Systems", 
@@ -64,8 +43,8 @@ export default function AutomotiveServices() {
       </div>
       <div className='p-3 bg-gray-100'>
         {items.map((item, index) => (
-          <div key={index} className={`bg-${item.id} mb-3 p-10 xl:py-40 py-40 flex ${item.id % 2 === 0 ? 'flex-row-reverse': ''} fade-in-whole-element ${isVisible ? 'visible' : ''}`}>
-            <div ref={elementRef} className={`bg-sky-300/50 max-w-lg p-3 shadow-2xl fade-in-element ${isVisible ? 'visible' : ''}`}>
+          <div key={index} className={`bg-${item.id} mb-3 p-10 xl:py-40 py-40 flex ${item.id % 2 === 0 ? 'flex-row-reverse': ''} fade-in-whole-element`}>
+            <div className={`bg-sky-300/50 max-w-lg p-3 shadow-2xl fade-in-element`}>
               <h2 className='text-lg font-bold mb-2'>{item.title}</h2>
               <p className='mb-3'>{item.desc.slice(0,300)}...</p>
               <Link className='text-teal-300' to={`/service/item/${item.id}`}>Read More...</Link>
