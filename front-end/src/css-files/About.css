@@ -1,5 +1,5 @@
 .about-padding {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .title {
@@ -25,14 +25,15 @@
 }
 
 .para-box {
-    display: flex;
-    height: 350px;
-    width: 750px;
+    overflow: scroll;
+    height: 75%;
+    width: 70%;
     background-color: white;
+    padding: 30px;
 }
 
 .para-box p {
-    padding: 15px;
+    font-size: 18px;
 }
 
 .person-img-box {
@@ -51,9 +52,94 @@
 }
 
 .para-box-2 {
-    height: 400px;
-    width: 700px;
+    overflow: scroll;
+    height: 55%;
+    width: 45%;
     background-color: white;
+    padding: 20px;
     margin-right: 50px;
 }
 
+.para-box-2 .our-goals {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.para-box-2 p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1500px) {
+    .para-box {
+        overflow: scroll;
+        height: 75%;
+        width: 65%;
+        background-color: white;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .para-box {
+        overflow: scroll;
+        height: 75%;
+        width: 50%;
+        background-color: white;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .first-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        background-color: gray;
+
+        margin: 10px;
+    }
+
+    .para-box {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        height: 75%;
+        width: 90%;
+        background-color: white;
+        margin: 10px;
+        padding: 30px;
+    }
+
+    .person-img-box {
+        height: 25%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .about-padding {
+        padding-top: 55px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .title {
+        padding: 10px;
+        text-align: center;
+    }
+}
