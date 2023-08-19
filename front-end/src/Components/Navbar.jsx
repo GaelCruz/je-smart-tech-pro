@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import jestLogo from '../assets/homepage/logo.png';
-import '../css-files/navbar.css'
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
