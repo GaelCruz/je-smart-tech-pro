@@ -5,7 +5,7 @@ this will be the production repo for je smart tech
 npm install -g npm
 
 
-after that's complete run these commands.
+#after that's complete run these commands.
 
-npm install
-npm run dev
+#npm install
+#npm run dev
