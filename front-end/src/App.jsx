@@ -15,8 +15,10 @@ import '../src/css-files/main.css'
 export default function App() {
   return (
    <BrowserRouter>
-   <div className=''>
+   <div className='overflow-hidden'>
+    <div className='fixed z-40 w-full'>
       <Navbar />
+    </div>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

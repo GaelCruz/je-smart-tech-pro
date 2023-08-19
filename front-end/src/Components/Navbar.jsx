@@ -7,7 +7,6 @@ export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const dropDownRef = useRef(null)
   const [ourServicesButtonClick, setOurServicesButtonClick] = useState(false)
-  const windowWitdth = window.innerWidth
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -43,7 +42,7 @@ export default function Navbar() {
           <Link className="hover:text-teal-950" to="/contact">Contact</Link>
 
           <div className='relative'>
-            <div  className={`services-container right-1 p-5 absolute mt-2 bg-gray-200 rounded-lg ${ourServicesButtonClick ? 'fade-in' : ''}`}>
+            <div  className={`services-container right-1 p-5 absolute mt-2 bg-gray-200 rounded-lg ${ourServicesButtonClick ? 'fade-in' : 'fade-out'}`}>
               <ul>  
 
                 <li className='py-2 p-1 border-b-2 border-sky-300/50 hover:bg-sky-300/50 hover:rounded-lg hover:shadow-xl'><Link className="hover:text-teal-950" to="/comfort-and-control">Comfort & Control</Link></li>
@@ -59,14 +58,15 @@ export default function Navbar() {
         </div>
 
         <div onClick={toggleNav} id='burger-btn' className='sm:hidden space-y-1'>
-          <div className={`w-7 h-1 bg-black ${isNavOpen ? 'transform rotate-45 translate-y-2' : ''}`}></div>
-          <div className={`w-4 h-1 bg-black ${isNavOpen ? 'opacity-0' : ''}`}></div>
-          <div className={`w-7 h-1 bg-black ${isNavOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></div>
+          <div className={`w-7 h-1 bg-black duration-300 ${isNavOpen ? 'translate rotate-45 translate-y-2 duration-300' : ''}`}></div>
+          <div className={`w-4 h-1 bg-black duration-300 ${isNavOpen ? 'opacity-0 duration-300' : ''}`}></div>
+          <div className={`w-7 h-1 bg-black duration-300 ${isNavOpen ? 'translate -rotate-45 -translate-y-2 duration-300' : ''}`}></div>
         </div>
       </div>
+      
       <div
         id='nav-items'
-        className={`absolute right-3 bg-sky-300/90 mt-5 flex flex-col ${isNavOpen ? 'fade-in' : 'fade-out'}`}
+        className={`absolute -right-60 p-3 text-xl rounded-xl bg-sky-300/90 mt-5 flex flex-col ${isNavOpen ? '-translate-x-64 duration-300' : 'duration-300'}`}
       >
         <Link className="hover:text-teal-950" to="/">Home</Link>
         <Link className="hover:text-teal-950" to="/about">About</Link>
