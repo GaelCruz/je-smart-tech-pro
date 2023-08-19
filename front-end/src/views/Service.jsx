@@ -24,8 +24,8 @@ export default function Service() {
 
   return (
     <div className=''>
-      <div className='pt-20'>
-        <div className={`flex justify-center py-20 bg-${item.id}`}> 
+      <div className='pt-14 sm:pt-20'>
+        <div className={`flex justify-center px-5 py-20 bg-${item.id}`}> 
           <h3 className='border-2 p-10 max-w-lg border-black text-3xl font-bold text-center bg-gray-500/50 shadow-xl'>{item.title}</h3>
         </div>
         <div className='p-10'>
