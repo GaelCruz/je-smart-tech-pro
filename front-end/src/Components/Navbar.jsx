@@ -31,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="z-40 fixed bg-sky-300/90 p-2 px-3 relative sm:p-5 shadow-xl w-full">
+    <nav className="bg-sky-300/90 p-2 px-3 relative sm:p-5 shadow-xl w-full">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* <h1 className="text-xl sm:text-2xl">JE Smart Tech</h1> */}
         <Link to={"/"}><img className='h-10' src={jestLogo} alt="" /></Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
           <Link className="hover:text-teal-950" to="/contact">Contact</Link>
 
           <div className='relative'>
-            <div  className={`services-container right-1 p-5 absolute mt-2 bg-gray-200 rounded-lg ${ourServicesButtonClick ? 'fade-in' : 'fade-out'}`}>
+            <div  className={`services-container z-30 -top-64 right-1 p-5 absolute mt-7 bg-gray-200 rounded-lg duration-300 ${ourServicesButtonClick ? 'translate top-1 duration-300 right-1 ' : ''}`}>
               <ul>  
 
                 <li className='py-2 p-1 border-b-2 border-sky-300/50 hover:bg-sky-300/50 hover:rounded-lg hover:shadow-xl'><Link className="hover:text-teal-950" to="/comfort-and-control">Comfort & Control</Link></li>
