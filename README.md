@@ -7,5 +7,5 @@ npm install -g npm
 
 #after that's complete run these commands.
 
-#npm install
-#npm run dev
+$ npm install
+$ npm run dev
