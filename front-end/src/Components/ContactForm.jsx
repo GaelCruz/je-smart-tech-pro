@@ -8,7 +8,7 @@ export const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_csljiyl', 'template_tg0xv9l', form.current, 'eRC0p8p1KhvEOhMbR')
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -44,7 +44,7 @@ export const ContactForm = () => {
         </div>
       </form>
       
-        <div id="successMessage" class="hidden text-center max-w-lg mx-auto p-4 mb-4 mt-4 bg-green-200 text-green-800 rounded shadow-lg shadow-green-600/50">
+        <div id="successMessage" class="hidden text-center max-w-lg mx-auto p-4 mb-10 mt-4 bg-green-200 text-green-800 rounded shadow-lg shadow-green-600/50">
           <p>Thank you! Your form has been submitted successfully.</p>
         </div>
     </div>

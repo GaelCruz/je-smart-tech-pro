@@ -53,8 +53,9 @@ export default function Home() {
         <div className="absolute pt-10 w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           <h1 className="sm:text-4xl md:text-7xl text-xl font-bold mb-1">JE Smart Tech</h1>
           <p className="lg:text-4xl sm:text-2xl mb-9">Give your home the upgrade it needs.</p>
-          <Link className="bg-slate-500/50 p-2 hover:bg-sky-500/50 text-sm sm:text-3xl rounded-md " to={'/contact'}>Contact us</Link>
+          <Link className="bg-slate-500/50 p-2 hover:bg-sky-500/50 text-sm sm:text-3xl rounded-md " to={'/contact'}>Contact Us</Link>
         </div>
+        <p></p>
       </div>
 
       <div className='bg-stone-300 px-9 py-5 sm:py-20 sm:px-20 my-3'>
